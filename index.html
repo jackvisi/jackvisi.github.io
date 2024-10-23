@@ -1,13 +1,33 @@
 <html>
 <head>
-	Home Page
 </head>
+<title> L'UOVO</title>
 	<h1>
-		Salve!
+		Premi sull'uovo per schiuderlo!
 	</h1>
 <body>
-<p id="demo">Premi il bottone per iniziare!</p>
+	<img id="uovo" src="egg1.jpg" onclick="schiudiuovo()"></img>
+	<h2 id="tom"></h2>
+<script>
+	let c = 0;
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Un pò più forte."'>Click Me!</button>
+	function schiudiuovo(){
+		c++;
+		 if (c === 1) {
+                document.getElementById("uovo").src = "egg2.jpg";
+            }
+        if (c === 2) {
+                document.getElementById("uovo").src = "egg3.jpg";
+            }
+        if (c === 3) {
+                document.getElementById("uovo").src = "egg4.jpg";
+            } 
+        if (c === 4) {
+                document.getElementById("uovo").src = "egg2.jpg";
+                document.getElementById("tom").innerText = "Tomson!";
+            }           
+
+	}
+</script>
 </body>	
 </html>
