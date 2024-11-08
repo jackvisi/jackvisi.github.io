@@ -2,11 +2,11 @@
 
 let livelloCocktail = 0;
 
-function allowDrop(event) {
+function consentiRilascio(event) {
     event.preventDefault();
 }
 
-function drag(event) {
+function trascina(event) {
     event.dataTransfer.setData("text", event.target.id);
 }
 
@@ -17,17 +17,17 @@ function drop(event) {
 
     
     if (ingredienteId === "vodka") {
-        aggiungiIngrediente("vodka", "grey", 30);
+        aggiungiIngrediente("vodka", "e0e0de", 30);
         ingrediente.style.display = "none";
     } else if (ingredienteId === "liquore") {
         ingrediente.style.display = "none";
-        aggiungiIngrediente("liquore", "brown", 20); 
+        aggiungiIngrediente("liquore", "897f7a", 20); 
     } else if (ingredienteId === "latte") {
         ingrediente.style.display = "none";
         aggiungiIngrediente("latte", "whitesmoke", 40); 
     }else if (ingredienteId === "ghiaccio") {
         ingrediente.style.display = "none";
-        aggiungiIngrediente("ghiaccio", "white", 10); 
+        aggiungiIngrediente("ghiaccio", "grey", 10); 
     }
 }
 
@@ -43,7 +43,7 @@ function aggiungiIngrediente(nome, colore, incremento) {
 
     
     if (livelloCocktail >= 100) {
-        document.getElementById("completato").innerText = "Un secondo solo che mescolo!";
+        document.getElementById("completato").innerText = "Un secondo che mescolo!";
         setTimeout(russianFinito, 3000);
     }
 }
