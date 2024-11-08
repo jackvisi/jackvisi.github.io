@@ -1,0 +1,58 @@
+.titolo{
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 15px;
+    letter-spacing: 20px;
+    width: 100%; 
+    height: auto; 
+    top: 0;
+    right:0;
+    background-color: green;
+    position: fixed;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    
+}
+
+.fotop{
+    height: 50%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px 20px; 
+    line-height: 0;
+}
+
+.personaggi{
+    width: auto; 
+    height: 50%;
+    border-radius: 8px;
+}
+
+.fotodid{
+    float: right;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.dida{
+    text-align: left;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.bottone{
+    width: 200px;
+    border: solid;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    background-color: goldenrod;
+}

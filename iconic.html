@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylep.css">
+    </head>
+    <body>
+        <div class="titolo"><h1 style="color:goldenrod"><i>Oggetti Iconici</i></h1></div>
+        <h2 style="margin-top: 100px;margin-left: 20px;margin-right: 20px;">
+            In questa pagina vorrei parlare di 3 oggetti/hobby che secondo me possono essere considerati
+            dei personaggi del film a tutti gli effetti: il White Russian, il Bowling e Il Tappeto di Drugo.
+            Premi i pulsanti qui sotto per leggere una breve didascalia. 
+        </h2>
+        <div class="fotop" style="margin-top: 100px;">
+            <figure style="margin: 0;">
+                <img style="height: 40%;"class="personaggi"src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Bowling_with_red_ball.jpg/640px-Bowling_with_red_ball.jpg"></img>
+                <figcaption style="margin-top: 20px"><button class="bottone" onclick="bottone('bowling')"><b>Bowling</b></button></figcaption>
+            </figure>
+            <figure style="margin: 0;">
+                <img style="height: 40%;"class="personaggi"src="white1.avif"></img>
+                <figcaption style="margin-top: 20px"><button class="bottone" onclick="bottone('whiterussian')"><b>White Russian</b></button></figcaption>
+            </figure>
+            <figure style="margin: 0;">
+                <img style="height: 40%;"class="personaggi"src="tappeto.avif"></img>
+                <figcaption style="margin-top: 20px"><button class="bottone" onclick="bottone('tappeto')"><b>Il Tappeto</b></button></figcaption>
+            </figure>
+        </div>
+        <div id="bowling" style="display: none;">
+            <h1 style="color:goldenrod"style="margin-top:-120px;">Il Bowling</h1>
+            <img class="fotodid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Bowling_with_red_ball.jpg/640px-Bowling_with_red_ball.jpg" ></img>
+            <p class="dida">
+                Il bowling in questo film è molto più di un semplice sport o passatempo:
+                è il cuore simbolico del film, un luogo di evasione. Per Drugo, Walter e Donnie, la pista da bowling rappresenta 
+                una sorta di rifugio "spirituale" dove le regole sono chiare e la realtà sembra più semplice. 
+                Ogni aspetto del bowling dalle partite 
+                alle conversazioni tra amici sembra avere una profondità nascosta, quasi
+                filosofica. La semplicità del gioco, con le sue regole chiare e i suoi movimenti 
+                ripetitivi, è l'antitesi delle complicazioni e dei drammi che i personaggi affrontano
+                nel mondo esterno. Il Bowling è presente anche nei "viaggi" onirici
+                di Drugo che vediamo durante il film. Sogni intensi dove i 
+                protagonisti della sua vita recitano sullo sfondo di piste da bowling.
+                Ricordo una frase di Drugo, roprio nell'ultima scena, 
+                un uomo(il narratore del film) chiede a Drugo come vada la vita e lui risponde: 
+                <b>"Qualche strike, qualche palla persa"</b>.  Senza agitarsi, senza disperare, 
+                Senza perdersi d'animo, si può sempre rimontare o al massimo si viene sconfitti, 
+                ma poi si rigioca, i drammi passano, le gioie pure, è sempre un lancio dopo l’altro, 
+                un White Russian in mano e un buon tappeto.
+ 
+            </p>
+        </div>
+        <div id="whiterussian" style="display: none;">
+            <h1 style="color:goldenrod"style="margin-top:120px;">Il White Russian</h1>
+            <img class="fotodid" src="white1.avif" ></img>
+            <p class="dida">
+                Il White Russian è un cocktail a base di vodka,
+                una variante del Black Russian. Gli ingredienti sono
+                vodka, liquore al caffè e panna/latte. Il White Russian 
+                è molto più di un semplice cocktail nel film:
+                è l'emblema della filosofia di vita di Drugo. 
+                Jeffrey sorseggia questo cocktail quasi 
+                costantemente, tanto che diventa una sorta di "marchio 
+                di fabbrica" del personaggio, un dettaglio iconico che 
+                lo definisce in modo immediato.
+                Il White Russian incarna il suo approccio alla vita 
+                semplice, senza pretese e completamente indifferente 
+                alle convenzioni sociali. Mentre tutti intorno a lui 
+                si agitano e si complicano l'esistenza, Drugo rimane 
+                fedele alla sua bevanda e al suo stile di vita. Può sembrare
+                che sia il classico caso, dove davanti ad una vita sempre più
+                pesante nascondiamo le nostre preoccupazioni sotto il velo 
+                dell'alcol, me per Drugo sembra essere diverso, sorseggiare 
+                un White Russian ghiacciato è il suo modo di affrontare, non di scappare.
+            </p>
+        </div>
+        <div id="tappeto" style="display: none;">
+            <h1 style="color:goldenrod"style="margin-top:120px;">Il Tappeto</h1>
+            <img class="fotodid" src="tappeto.avif" ></img>
+            <p class="dida">
+                "That rug really tied the room together" è un frase che 
+                Drugo ripete spesso nel film, sottolineando quanto 
+                fosse legato, anche sentimentalmente, a quel tappeto. 
+                Questo oggetto è la vera scintilla che dà inzio al 
+                vortice di equivoci e situazioni assurde. Dei criminali,
+                scambiando Drugo per un suo omonimo, cercano di intimidirlo
+                urinando sul suo tappeto. Questo osceno atto costringe il Drugo ad 
+                uscire dalla sua comfort zone per trovare un sostituto. Diciamo
+                che questa faccenda è l'unica che non riesce a lasciar correre.
+                In sostanza, il tappeto, ci dimostra che la "bolla" di indiferrenza 
+                nella quale vive Drugo, si rompe quando vengono alterati
+                i suoi equilibri. È un uomo estremamente abitudinario, e pur 
+                di ritornare agli equilibri di prima è costratto ad iniziare questo
+                viaggio assurdo.
+            </p>
+        </div>
+        <script>
+             function bottone(id){
+                document.getElementById("bowling").style.display = "none";
+                document.getElementById("whiterussian").style.display = "none";
+                document.getElementById("tappeto").style.display = "none";
+                document.getElementById(id).style.display = "block";
+            }
+        </script>
+    </body>
+</html>

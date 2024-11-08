@@ -1,0 +1,74 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titolo"><h1 style="color:goldenrod"><i>IL GRANDE LEBOWSKI</i></h1></div>
+
+    <h2 style="margin: 90px;">Benvenuto! <br> Ti trovi nel sito web dedicato al
+         film "Il Grande Lebowski". Un consiglio, prima di immergerti 
+         nella lettura, prepara il famoso cocktail "White Russian",
+          a tutti gli effetti un protagonista del film. Trascina 
+          gli ingredienti sulla sinistra nello shaker e crea il tuo drink.
+    </h2>
+    
+    <div class="container">
+        <div class="ingredienti">
+            <div class="ingrediente" draggable="true" ondragstart="drag(event)" id="ghiaccio">Ghiaccio</div>
+            <div class="ingrediente" draggable="true" ondragstart="drag(event)" id="vodka">Vodka</div>
+            <div class="ingrediente" draggable="true" ondragstart="drag(event)" id="liquore">Liquore al Caffè</div>
+            <div class="ingrediente" draggable="true" ondragstart="drag(event)" id="latte">Latte</div>
+            
+        </div>
+        <div id="bicchiere" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="content"></div> 
+        </div>
+    </div>
+    <p id="completato"></p>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img id="fotowhite" src="" style="display: none;"></img>
+    </div>
+    <h1 style="color:goldenrod">Introduzione</h1>
+    <img src="https://i.ebayimg.com/images/g/6SkAAOSwD6hfdIzP/s-l1200.jpg" id="locandina"></img>
+    <p style="text-align: left;margin-top: 20px;line-height: 40px;">"The Big Lebowski" è un 
+        film cult del 1998 scritto e diretto dai fratelli Joel ed Ethan Coen. Il cast 
+        comprende attori del calibro di Jeff Bridges, John Goodman, Steve Buscemi,
+        Julianne Moore e John Tortullo. La pellicola è <b>una commedia noir dall'ironia surreale</b>
+        che mescola intrighi, rapimenti, riscatti e criminali del tutto
+        stravaganti, il tutto ambientato nella Los Ageles degli anni '90. Il 
+        protagonista è l'iconico <b>Jeffrey Lebowski</b>(Jeff Bridges) alias 
+        "The Dude"(Il Drugo in italiano), un pigrissimo e pacifico hippy 
+        che passa le sue giornate a giocare a Bowling. Un uomo che incarna 
+        la filosofia del "prendere la vita come viene" con un approccio del 
+        tutto rilassato verso lo scorrere inerosorabile del tempo, dove
+        ogni preoccupazione della vita sembra non toccarlo mai, un fresco
+        White Russian e tutto torna al suo posto. Sempre accerchiato dai 
+        due suoi strampalati amici, <b>Walter</b>(John Goodman) e <b>Donnie</b>(Steve Buscemi),
+        passa tutte le sue monotone giornate al bowling. Il tutto inizia 
+        quando, scambiato per un suo omonimo, il Drugo si ritrova a casa dei criminali
+        che nel cercare di intimidirlo rovinano il suo amato tappeto. Le avventure
+        allora cominciamo con la sua estenuante rincorsa ai soldi persi con il tappeto.
+    </p>
+    <h1 style="color:goldenrod;margin-top: 130px;">Scopo del Sito</h1>
+    <p style="margin-top: 20px;line-height: 40px;">
+        L'intento di questo sito web è dare una piccola introduzione
+        e cercare di trasmettere, anche se in piccola parte,
+        la mia passione verso questo film. Pertanto qua sotto troverete 
+        il link verso altre due pagine del sito, una sui personaggi l'altra
+        su gli oggetti iconici della pellicola. Inoltre è presente il trailer.
+    </p>
+    <div style=" display: flex;justify-content: center;margin-top: 100px;gap: 70px;">
+        <ol style="text-align: left;line-height: 100px;">
+            <li><a href="personaggi.html">Personaggi</a></li>
+            <li><a href="iconic.html">Oggetti Iconici</a></li>
+        </ol>
+        <img src="trio.avif"style="width:35%;height:auto;float:right;margin-right:40px">
+    </div>
+
+    <iframe style="margin-top: 100px"width="560" height="315" src="https://www.youtube.com/embed/cd-go0oBF4Y?si=bPFkIZSYlipxsnWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
