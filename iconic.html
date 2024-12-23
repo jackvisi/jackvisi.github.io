@@ -96,6 +96,11 @@
                 document.getElementById("whiterussian").style.display = "none";
                 document.getElementById("tappeto").style.display = "none";
                 document.getElementById(id).style.display = "block";
+                const targetElement = document.getElementById(id);
+                targetElement.scrollIntoView({
+                behavior: "smooth", 
+                block: "start" 
+                });
             }
         </script>
     </body>
