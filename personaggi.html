@@ -200,6 +200,11 @@
                 document.getElementById("didascaliaJe").style.display = "none";
                 document.getElementById("didascaliaN").style.display = "none";
                 document.getElementById(id).style.display = "block";
+                const targetElement = document.getElementById(id);
+                targetElement.scrollIntoView({
+                behavior: "smooth", // Effetto di scorrimento morbido
+                block: "start" // Allinea l'elemento all'inizio della visualizzazione
+                });
             }
         </script>
     </body>
